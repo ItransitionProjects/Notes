@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+#body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(pics/sticks.jpg);
+	background-size: 150px 150px;
+	background-repeat: repeat;
+}
+
+.drag {
+	height: 200px;
+	width: 300px;
+	background-color: #feffef;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 30px;
+	position: absolute;
+	min-width: 100px;
+    min-height: 70px;
+    max-height: 300px;
+    max-width: 400px;
+}
+
+.text {
+	width: 98%;
+	height: 82%;
+	position: absolute;
+	top: 15%;
+	left: 0px;
+	background: transparent;
+	border: none;
+	resize: none;
+}
+
+.text:focus {
+	border: none;
+	outline: none;
+}
+
+.changecolor {
+	background-image: url('img/Pencil.png');
+	background-size: 100% 100%;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 1px;
+	right: 14px;
+	display: none;
+}
+
+.closebutton {
+	background-image: url('img/Close.png');
+	background-size: 100% 100%;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 1px;
+	right: 1px;
+	display:none;
+} 
+.drag:hover .closebutton {
+	display:block;
+}
+.drag:hover .changecolor {
+	display:block;
+}
